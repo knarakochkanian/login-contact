@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace , sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input, .Logout button {
+    appearance: none;
+    background-color: beige;
+
+    outline: none;
+    padding: 5px 5px;
+    }
+
+    .App { 
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: beige;
+
+    } 
+    form {
+        display: block;
+        position: relative;
+        display: block;
+        background-color: #FFF;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    form h2 {
+        color: #888;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+   
+    form .form-group {
+        display: block;
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+
+    form .form-group label{
+        display: block;
+        color: rgb(94, 90, 90);
+        margin-bottom: 5px;
+        font-size: 12px;
+        transition: 0.4s;
+    }
+.form-group:focus-within label{
+    color: #FE4880
+}
+
+form .form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #cec3c3;
+    border-radius: 8px;
+    transition: 00.4s;
+}
+
+form .form-group input:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+form input[type="submit"],
+    .Logout button
+    {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to left, #FFCE00 50%, #FFCE00 50%, #FE4880);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover, 
+.Logout button:hover{
+    background-position: 100% 0%;
+}
+
+.welcome {
+    width: 50%;
+    max-width: 100px;
+    padding: 5px 5px;
+}
+
+.Logout button {
+    width: 50%;
+    max-width: 100px;
+    padding: 5px 5px;
 }
