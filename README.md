@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Двухстраничное приложение для своих контактов
+Для запуска приложения вам понадобиться ввести данные имя, логин и пароль.
+После этого откроется страница с контактами. Так же есть функции удаления, добавления, поиска, изменения контактов. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##В прилодении использовались:
+*React js
+*React hook
+*material ui
+*javascript
+*css
+*html
 
-## Available Scripts
+![Фото приложения](Снимок веб-страницы_2-11-2021_23617_localhost.jpeg)
+![Фото приложения](Снимок веб-страницы_2-11-2021_23544_localhost.jpeg)
 
-In the project directory, you can run:
 
 ### `yarn start`
 
